@@ -1,0 +1,20 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "Posts": {
+      "$postId": {
+        "image": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+        }
+      }
+    }
+  },
+  "hosting": {
+
+  },
+  "storage": {
+    "rules": "storage.rules"  
+  }
+}
